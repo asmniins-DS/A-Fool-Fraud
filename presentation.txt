@@ -1,0 +1,77 @@
+A FOOL FRAUD
+Enhancing Credit Card Fraud Detection Using Data Augmentation
+
+1. Project Overview
+Credit card fraud detection suffers from highly imbalanced datasets, where fraudulent transactions are rare but costly.
+This project aims to improve fraud detection performance using modern data augmentation techniques.
+
+2. Dataset Description
+The dataset contains anonymized credit card transactions.
+Target variable:
+- Class 0: Legitimate transaction
+- Class 1: Fraudulent transaction
+
+Fraud cases represent less than 0.2% of the data, creating severe imbalance.
+
+3. Problem Statement
+Traditional machine learning models are biased toward the majority class.
+This results in:
+- High accuracy
+- Poor fraud detection (low recall)
+
+Missing fraud cases leads to financial loss and reputational risk.
+
+4. Baseline Models (No Augmentation)
+Models trained on the original dataset:
+- Logistic Regression
+- Random Forest
+- Support Vector Machine
+- Gradient Boosting
+
+Results:
+- High accuracy (>99%)
+- Very low recall for fraud class
+- Ineffective real-world fraud detection
+
+5. Data Augmentation Techniques
+To address class imbalance, we applied:
+- SMOTE (Synthetic Minority Over-sampling Technique)
+- ADASYN (Adaptive Synthetic Sampling)
+
+These methods generate synthetic fraud samples to balance training data.
+
+6. Augmented Model Performance
+After augmentation:
+- Recall improved significantly
+- F1-score increased
+- ROC-AUC improved across all models
+
+Random Forest and Gradient Boosting achieved the best performance.
+
+7. Model Comparison Summary
+Traditional models:
+- Biased toward legitimate transactions
+- Miss majority of fraud cases
+
+Augmented models:
+- Better generalization
+- Improved fraud detection
+- Reduced false negatives
+
+8. Ethical & Risk Considerations
+- Dataset anonymization respected
+- Augmentation applied only to training data
+- Validation on untouched test set
+- Bias and overfitting monitored
+
+9. Business Impact
+- Improved fraud detection accuracy
+- Reduced financial losses
+- Safer transaction environment
+- Scalable enhancement to existing systems
+
+10. Conclusion
+Data augmentation significantly enhances fraud detection performance.
+The augmented model can be safely integrated into the existing fraud detection pipeline.
+
+Thank you.
